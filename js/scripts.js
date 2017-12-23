@@ -20,11 +20,11 @@ function Column(name) {
 
     function createColumn() {
         // CREATING COMPONENTS OF COLUMNS
-        var $column = $('<div>').addClass('column');
+        var $column = $('<div>').addClass('column container-fluid');
         var $columnTitle = $('<h2>').addClass('column-title').text(self.name);
-        var $columnCardList = $('<ul>').addClass('column-card-list');
-        var $columnDelete = $('<button>').addClass('btn-delete').text('x');
-        var $columnAddCard = $('<button>').addClass('add-card').text('Add a card');
+        var $columnCardList = $('<ul>').addClass('column-card-list container-fluid list-group-item list-group-item-info');
+        var $columnDelete = $('<button>').addClass('btn-delete btn btn-danger btn-sm').text('x');
+        var $columnAddCard = $('<button>').addClass('add-card btn btn-success btn-sm').text('Add a card');
     
         // ADDING EVENTS
         $columnDelete.click(function() {
